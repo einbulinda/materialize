@@ -13,7 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <style></style>
+    <style>
+      nav .badge {
+        position: relative;
+        top: 20px;
+        right: 20px;
+      }
+    </style>
 
     <title>Materialize CSS</title>
   </head>
@@ -29,6 +35,12 @@
           <li><a href="">About</a></li>
           <li><a href="">Contact Us</a></li>
           <li><a href="">Login</a></li>
+          <li>
+            <a href="" class="btn-floating indigo darken-3 z-depth-0">
+              <i class="material-icons">notifications</i>
+            </a>
+          </li>
+          <li><span class="badge white-text red new">5</span></li>
         </ul>
       </div>
     </nav>
