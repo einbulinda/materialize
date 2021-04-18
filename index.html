@@ -44,6 +44,9 @@
       .tabs .tab a:focus.active {
         background: transparent;
       }
+      .parallax-container {
+        height: 400px;
+      }
     </style>
   </head>
   <body>
@@ -56,9 +59,9 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li>
               <a
                 href="#"
@@ -88,16 +91,16 @@
             </li>
           </ul>
           <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <!-- photo / grid -->
-    <section class="container section" id="photos">
+    <section class="container scrollspy section" id="photos">
       <div class="row">
         <div class="col s12 l4">
           <img
@@ -156,7 +159,7 @@
     </div>
 
     <!-- services / tabs -->
-    <section class="container section" id="services">
+    <section class="container scrollspy section" id="services">
       <div class="row">
         <div class="col s12 l4">
           <h3 class="indigo-text text-darken-4">What i do...</h3>
@@ -219,7 +222,7 @@
       </div>
     </div>
     <!-- contact form -->
-    <section class="section container" id="contact">
+    <section class="section scrollspy container" id="contact">
       <div class="row">
         <div class="col s12 l5">
           <h2 class="indigo-text text-darken-4">Get in Touch</h2>
@@ -324,6 +327,7 @@
           yearRange: 1,
         });
         $(".tooltipped").tooltip();
+        $(".scrollspy").scrollSpy();
       });
     </script>
   </body>
